@@ -44,7 +44,7 @@ clang-toolchain-help:
 clang-toolchain-settings:
 	@$(call prsetting,CLANG_TOOLCHAIN,${CLANG_TOOLCHAIN})
 
-CLANG_TOOLCHAIN ?= native
+CLANG_TOOLCHAIN ?= from-source
 
 ifeq (${CLANG_TOOLCHAIN},prebuilt)
   include ${LLVMTOP}/clang-prebuilt.mk

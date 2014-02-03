@@ -24,7 +24,7 @@
 
 TARGETDIR	= ${CURDIR}
 TOPDIR		= $(realpath ${TARGETDIR}/../..)
-CROSS_ARM_TOOLCHAIN = android-linaro
+CROSS_ARM_TOOLCHAIN = android
 LLVM_COMMIT = master
 CLANG_COMMIT = master
 
