@@ -29,14 +29,14 @@ LLVM_COMMIT = master
 CLANG_COMMIT = master
 
 KERNEL_BRANCH	= 188v4
-KERNEL_GIT	= file://~/htc/kernel
+KERNEL_GIT	= git@github.com:Xmister/enru-3.1.10-g517147e.git
 KERNELDIR	= ${SRCDIR}/android_kernel_onex
 KERNEL_CFG	= ${KERNELDIR}/arch/arm/configs/ap33_android_defconfig
 
 #Use the branch name for the dir containing target specific patch overrides
 KERNEL_REPO_PATCHES=${KERNEL_BRANCH}
 
-EXTRAFLAGS	=
+EXTRAFLAGS	= -O2 -marm -march=armv7-a -mfpu=neon -ftree-vectorize -funsafe-math-optimizations -mcpu=cortex-a9 -mtune=cortex-a9
 
 all: prep kernel-build
 

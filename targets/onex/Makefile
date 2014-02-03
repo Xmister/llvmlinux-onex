@@ -24,7 +24,7 @@
 
 TARGETDIR	= ${CURDIR}
 TOPDIR		= $(realpath ${TARGETDIR}/../..)
-CROSS_ARM_TOOLCHAIN = android
+CROSS_ARM_TOOLCHAIN = android-linaro
 LLVM_COMMIT = master
 CLANG_COMMIT = master
 
@@ -36,7 +36,7 @@ KERNEL_CFG	= ${KERNELDIR}/arch/arm/configs/ap33_android_defconfig
 #Use the branch name for the dir containing target specific patch overrides
 KERNEL_REPO_PATCHES=${KERNEL_BRANCH}
 
-EXTRAFLAGS	=
+EXTRAFLAGS	= 
 
 all: prep kernel-build
 

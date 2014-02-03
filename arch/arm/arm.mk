@@ -31,8 +31,8 @@ STATE_TOOLCHAIN	= state/arm-cc
 # ARCH must be defined before all.mk
 ARCH		= arm
 CROSS_COMPILE	= ${HOST}-
-MARCH		?= armv7-a
-MFLOAT		?= -mfpu=neon
+MARCH		= armv7-a
+MFLOAT		= -mfpu=neon
 
 FETCH_TARGETS	+= arm-cc
 RAZE_TARGETS	+= arm-cc-clean
