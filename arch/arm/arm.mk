@@ -32,7 +32,7 @@ STATE_TOOLCHAIN	= state/arm-cc
 ARCH		= arm
 CROSS_COMPILE	= ${HOST}-
 MARCH		?= armv7-a
-MFLOAT		?= -mfloat-abi=softfp -mfpu=neon
+MFLOAT		?= -mfpu=neon
 
 FETCH_TARGETS	+= arm-cc
 RAZE_TARGETS	+= arm-cc-clean

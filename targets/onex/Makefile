@@ -29,7 +29,7 @@ LLVM_COMMIT = master
 CLANG_COMMIT = master
 
 KERNEL_BRANCH	= 188v4
-KERNEL_GIT	= file://~/htc/kernel
+KERNEL_GIT	= git@github.com:Xmister/enru-3.1.10-g517147e.git
 KERNELDIR	= ${SRCDIR}/android_kernel_onex
 KERNEL_CFG	= ${KERNELDIR}/arch/arm/configs/ap33_android_defconfig
 

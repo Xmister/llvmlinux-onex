@@ -28,10 +28,10 @@ CROSS_ARM_TOOLCHAIN = android
 LLVM_COMMIT = master
 CLANG_COMMIT = master
 
-KERNEL_BRANCH	= cm-10.2
-KERNEL_GIT	= git://github.com/CyanogenMod/android_kernel_asus_grouper
-KERNELDIR	= ${SRCDIR}/android_kernel_nexus7
-KERNEL_CFG	= ${KERNELDIR}/arch/arm/configs/cyanogenmod_grouper_defconfig
+KERNEL_BRANCH	= 188v4
+KERNEL_GIT	= file://~/htc/kernel
+KERNELDIR	= ${SRCDIR}/android_kernel_onex
+KERNEL_CFG	= ${KERNELDIR}/arch/arm/configs/ap33_android_defconfig
 
 #Use the branch name for the dir containing target specific patch overrides
 KERNEL_REPO_PATCHES=${KERNEL_BRANCH}

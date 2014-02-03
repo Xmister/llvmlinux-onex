@@ -24,7 +24,7 @@ diff --git a/scripts/Makefile.build b/scripts/Makefile.build
 index d5d859c..27c4098 100644
 --- a/scripts/Makefile.build
 +++ b/scripts/Makefile.build
-@@ -65,12 +65,23 @@ warning-  := $(empty)
+@@ -65,11 +65,22 @@ warning-  := $(empty)
  warning-1 := -Wextra -Wunused -Wno-unused-parameter
  warning-1 += -Wmissing-declarations
  warning-1 += -Wmissing-format-attribute
@@ -33,7 +33,6 @@ index d5d859c..27c4098 100644
  warning-1 += -Wold-style-definition
  warning-1 += $(call cc-option, -Wmissing-include-dirs)
  warning-1 += $(call cc-option, -Wunused-but-set-variable)
- warning-1 += $(call cc-disable-warning, missing-field-initializers)
  
 +# Clang
 +warning-1 += $(call cc-disable-warning, initializer-overrides)
